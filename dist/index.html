@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+  @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+        *{
+            font-family: Inter;
+        }
+
+        input[type=text],textarea{
+            border: 1px solid rgb(179, 174, 174);
+            border-radius: 10px;
+            box-shadow: 0px 1px 2px rgba(16,24,40,0.05);
+            margin-top: 5px;
+            
+        }
+        input[type=tel]{
+            border: 1px solid rgb(179, 174, 174);
+            border-left:none;
+            margin-top: 5px;
+        }
+        select{
+            border: 1px solid rgb(179, 174, 174);
+            border-right: none;
+            padding: 0 auto;
+            margin-top: 5px;
+        }
+        input[type=email]{
+            border: 1px solid rgb(179, 174, 174);
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+        label{
+            margin:10px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="mt-10 mx-auto  h-99 p-2 lg:w-88 sm:max-w-full mb-20">
+ <h1 class="text-purple-600 text-lg text-center font-semibold p-2">Contact Us</h1>
+ <h2 class="text-3xl font-semibold text-center ">Get in touch </h2>
+ <h3 class="text-center text-gray-600 my-3">We'd love to hear from you. please fill out this form</h3>
+ <form>
+ <div class=" gap-2 lg:flex  sm:block my-3 ">
+    <div class="block lg:w-1/2 ">
+        <label for="Username " class="my-3">Firstname</label>
+        <input type="text" class=" block h-10 p-2  w-full focus:outline-none rounded-sm " placeholder="First Name">
+    </div>
+    <div class="  lg:w-1/2 ">
+        <label for="Username">Lastname</label>
+        <input type="text" class="block  p-2 h-10 rounded-sm w-full focus:outline-none " placeholder="Last Name">
+    </div>
+ </div>
+ <div class="w-full">
+    <label for="Email" class="my-3">E-mail</label>
+        <input type="email" class="block p-2 rounded-sm  w-full h-10 focus:outline-none" placeholder="you@company.com">
+ </div>
+ <div class="w-full my-3">
+    <label for="tel" class="my-3">Phone-number</label>
+    <div class="flex w-full ">
+    <select name="country" id="country" class=" w-1/5 h-10 focus:outline-none " style="border-bottom-left-radius: 5px; border-top-left-radius: 5px;">
+        <option value="US">US</option>
+        <option value="UK">UK</option> 
+        <option value="NIG">NIG</option>
+        <option value="BRA">BRA</option>
+      </select>
+        <input type="tel" class="w-4/5 h-10 p-2 focus:outline-none" placeholder="+1(555)000-0000 " style="border-bottom-right-radius: 5px; border-top-right-radius: 5px;">
+    </div>
+ </div>
+ <div>
+    <span>Message</span>
+    <textarea  placeholder="Message" class="focus:outline-none w-full h-32 p-1"></textarea>
+ </div>
+ <div class="flex my-7 gap-3">
+    <input type="checkbox" >
+    <span>You agree to our friendly <a href="#" class="underline"> privacy policy</a></span>
+ </div>
+ <input type="button" value="Send Message" class="w-full h-12 bg-purple-600 text-white text-xl text-center font-semibold rounded-lg ">
+</form>
+</div>
+</body>
+</html>
