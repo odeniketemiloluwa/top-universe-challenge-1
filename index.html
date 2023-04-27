@@ -38,10 +38,15 @@
         label{
             margin:10px 0;
         }
+        @media screen and (max-width:640px){
+            .container{
+               width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
-<div class="mt-10 mx-auto  h-99 p-2 lg:w-88 sm:max-w-full mb-20">
+<div class="container mt-10 mx-auto  h-99 p-2 w-88  mb-20 ">
  <h1 class="text-purple-600 text-lg text-center font-semibold p-2">Contact Us</h1>
  <h2 class="text-3xl font-semibold text-center ">Get in touch </h2>
  <h3 class="text-center text-gray-600 my-3">We'd love to hear from you. please fill out this form</h3>
@@ -54,7 +59,7 @@
     </div>
     <div class="  lg:w-1/2 ">
         <label for="Username">Lastname</label>
-        <input type="text" class="block  p-2 h-10 rounded-sm w-full focus:outline-none " placeholder="Last Name">
+        <input type="text" class="block  p-2 h-10 rounded-sm w-full focus:outline-none sm:max-w-full" placeholder="Last Name">
     </div>
  </div>
  <div class="w-full">
